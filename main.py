@@ -45,7 +45,34 @@ if operation == '':
     print u"-o 参数是必须参数"
     os._exit(1)
 elif operation == 'shanbay':
-    url = "https://www.shanbay.com/wordlist/34/63685/?page="
-
-    _shanbay = shanbay.shanbay(url, 10)
+    #url = "https://www.shanbay.com/wordlist/34/63685/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63688/?page=" --download
+    #url = "https://www.shanbay.com/wordlist/34/63691/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63694/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63697/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63700/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63703/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63706/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63709/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63712/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63715/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63718/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63721/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63724/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63727/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63730/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63733/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63736/?page="
+    # url = "https://www.shanbay.com/wordlist/34/63739/?page="??
+    #url = "https://www.shanbay.com/wordlist/34/63742/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63745/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63748/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63751/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63754/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63757/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63760/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63763/?page="
+    #url = "https://www.shanbay.com/wordlist/34/63766/?page="
+    url = "https://www.shanbay.com/wordlist/34/108313/?page="
+    _shanbay = shanbay.shanbay(url, 11)
     _shanbay.run()

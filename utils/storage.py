@@ -25,8 +25,7 @@ class file_storage:
             content = fileObejct.read()
         else:
             content = ''
-        print "read:"
-        print file_path
+        print "read:" + file_path
         return content
 
     def exist_file(self, url):

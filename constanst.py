@@ -12,12 +12,12 @@ class _constant:
     MYSQL_HOST = "127.0.0.1"
     MYSQL_PORT = 3306
     MYSQL_USER = "root"
-    MYSQL_PASS = "1qazXSW@"
-    MYSQL_DB = "spider_db"
+    MYSQL_PASS = "000000"
+    MYSQL_DB = "words"
 
     MYSQL_CHARSET = "utf8"
 
-    MAIN_HOST = "spider_db"
+    MAIN_HOST = ""
 
     DOWNLOAD_PATH = '/Users/jianghao/workspace/python/words/download/'
 

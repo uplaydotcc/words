@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 import os
 from utils import downloader
 from utils import storage
+from mysql import words
 
 
 class shanbay:
@@ -76,13 +77,21 @@ class shanbay:
         soup = BeautifulSoup(html, 'html.parser')
         trs = soup.select(
             'table[class="table table-bordered table-striped"] > tbody > tr')
-
+        _list = []
         for idx, tr in enumerate(trs):
             tr_soup = BeautifulSoup(str(tr), 'html.parser')
             tds = tr_soup.select('td')
-            print tds[0].getText()
-            print tds[1].getText()
+            word = tds[0].getText()
+            word_description = tds[1].getText()
 
+            item = {'word': word.strip(
+            ), 'word_description': word_description.strip()}
+            _list.append(item)
+
+        # insert to mysql database
+        wordOrm = words.WordOrm()
+
+        wordOrm.addList(_list, 0)
         pass
 
     def run(self):
